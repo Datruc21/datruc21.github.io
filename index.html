@@ -2,14 +2,64 @@
 <html>
 
 <head>
-    <title>My resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Hey, I am Datruc, or Jalil Bellahcen when I am looking for a job, this website will serve as my resume and my portfolio</h2>
-    <a></a>
-    <a></a>
-    <a></a>
+    <header>
+        <p>Initialization completed...</p>
+        <div id="map"></div>
+    </header>
+    <div id="viewport">
+    <main class="slider">
+    <section id="Home">
+        <h1>Welcome Guest, you are currently at home. Feel free to visit!</h1>
+        <div class="Right-arrow">
+        <p>About me</p>
+        <img src="images/chevrons/icons8-chevron-E.png" onclick="goTo('about')">
+        </div>
+        <div class="Left-arrow">
+        <p>My resume</p>
+        <img src="images/chevrons/icons8-chevron-W.png" onclick="goTo('resume')">
+        </div>
+        <div class="Down-arrow">
+            <p>My projects</p>
+            <img src="images/chevrons/icons8-chevron-S.png" onclick="goTo('projects')">
+        </div>
+    </section>
+
+    <section id="Resume">
+        <h1>Resume is here</h1>
+        <div class="Right-arrow">
+        <p>Home</p>
+        <img src="images/chevrons/icons8-chevron-E.png" onclick="goTo('home')">
+        </div>
+    </section>
+
+
+    <section id="Projects">
+        <div class="Up-arrow">
+        <h1>Projects are here</h1>
+    <p>Home</p>
+    <img src="images/chevrons/icons8-chevron-N.png" onclick="goTo('home')">
+    </div>
+    </section>
+
+    <section id="About">
+    <h1>About me</h1>
+    <div class="Left-arrow">
+    <p>Home</p>
+    <img src="images/chevrons/icons8-chevron-W.png" onclick="goTo('home')">
+    </div>
+    </section>
+    </main>
+    </div>
+
+
 </body>
 
 </html>

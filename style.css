@@ -1,0 +1,55 @@
+body, html {
+  background-image: url("images/Dewatermark_1785158174826.jpeg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+main {
+ display: grid;
+ /* 3 colonnes de 100% de la largeur de l'écran */
+  grid-template-columns: 100vw 100vw 100vw; 
+  
+  /* 2 lignes de 100% de la hauteur de l'écran */
+  grid-template-rows: 100vh 100vh;
+
+  transition: transform 0.6s ease-in-out;
+
+
+
+}
+
+#Home {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#Resume {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#About {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#Projects {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+h1, p {
+    color : #00FFF0;
+}
