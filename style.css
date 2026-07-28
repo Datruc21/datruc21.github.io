@@ -1,3 +1,9 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body, html {
   background-image: url("images/Dewatermark_1785158174826.jpeg");
   background-size: cover;
@@ -11,17 +17,18 @@ main {
   
   /* 2 lignes de 100% de la hauteur de l'écran */
   grid-template-rows: 100vh 100vh;
+  transform: translate(-100vw, 0vh);
 
   transition: transform 0.6s ease-in-out;
 
-
-
 }
+
 
 #Home {
     grid-column: 2;
     grid-row: 1;
 }
+
 
 #Resume {
     grid-row: 1;
@@ -38,6 +45,64 @@ main {
     grid-column: 2;
 }
 
+/* 2. Fixation stricte des sous-grilles 3x3 pour CHAQUE section */
+#Home, #Resume, #About, #Projects {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* 3 colonnes et 3 lignes strictement identiques pour toutes les pages */
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    padding: 20px; /* Marges internes pour décoller proprement des bords */
+}
+.Left-arrow img, 
+.Right-arrow img, 
+.Up-arrow img, 
+.Down-arrow img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.Left-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Tout à gauche */
+    gap: 10px;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.Right-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Tout à droite */
+    gap: 10px;
+    grid-row: 2;
+    grid-column: 3;
+    max-width: 100%;
+}
+
+.Up-arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Tout en haut */
+    gap: 10px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.Down-arrow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Tout en bas */
+    gap: 10px;
+    grid-row: 3;
+    grid-column: 2;
+}
 
 header {
     position: fixed;
