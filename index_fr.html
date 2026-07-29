@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio website</title>
+    <title>Mon site portfolio</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h3>Initialization completed...</h3>
+        <h3>Initialisation complète...</h3>
         <p><a href="mailto:jalil.bellahcen@gmail.com">jalil.bellahcen@gmail.com</a></p>
     
             <p>
@@ -39,8 +39,8 @@
   </a>
 </p>
     <select onchange="location = this.value;">
-        <option value="index.html" selected>EN</option>
-        <option value="index_fr.html">FR</option>
+        <option value="index.html">EN</option>
+        <option value="index_fr.html" selected>FR</option>
         <option value="index_ar.html">AR</option>
     </select>
     </header>
@@ -48,18 +48,18 @@
     <section id="Home">
         <div class="Left-arrow">
         <img src="images/chevrons/icons8-chevron-W.png" onclick="goTo('resume')">
-        <p onclick="goTo('resume')">My resume</p>
+        <p onclick="goTo('resume')">Mon CV</p>
         </div>
         <div class="center-content home-hero">
         <h1 class="hero-name">Jalil Bellahcen</h1>
-        <p id="Greeting">Welcome Guest, you are currently at home. Feel free to visit!</p>
+        <p id="Greeting">Bienvenue à toi, n'hésite pas à faire un tour!</p>
         </div>        
         <div class="Right-arrow">
-        <p onclick="goTo('about')">About me</p>
+        <p onclick="goTo('about')">À propos de moi</p>
         <img src="images/chevrons/icons8-chevron-E.png" onclick="goTo('about')">
         </div>        
         <div class="Down-arrow">
-            <p onclick="goTo('projects')">My projects</p>
+            <p onclick="goTo('projects')">Mes projets</p>
             <img src="images/chevrons/icons8-chevron-S.png" onclick="goTo('projects')">
         </div>
     </section>
@@ -67,36 +67,36 @@
     <section id="Resume">
         <div id="Full-Resume" class="center-content">
         <div>
-        <h2>Education</h2>
+        <h2>Éducation</h2>
         <h3><b>Efrei</b> - Villejuif, France</h3>
         <p><i>2024 – 2029</i></p>
-        <p>Master of Science in Computer Science & Engineering</p>
-        <h3><b>Bezout High School</b> - Nemours, France</h3>
+        <p>Diplôme d'ingénieur en informatique</p>
+        <h3><b>Lycée Bezout</b> - Nemours, France</h3>
         <p><i>2021 – 2024</i></p>
-        <p>High School Diploma (General Baccalaureate) — Specializing in Mathematics & Physics</p>
-        <p>Graduated with Highest Honors (Mention Très Bien)</p>
+        <p>Baccalauréat série générale spécialités Mathématiques et Physique</p>
+        <p>Mention Très Bien</p>
         </div>
 
         <div>
-        <h2>Work Experience</h2>
-        <h3><b>Bonobo</b> — Sales Assistant | Nemours, France</h3>
-        <p><i>January 2026 – February 2026</i></p>
+        <h2>Expériences</h2>
+        <h3><b>Bonobo</b> — Vendeur | Nemours, France</h3>
+        <p><i>Janvier 2026 – Févirer 2026</i></p>
         <ul>
-            <li>Welcomed, advised, and assisted customers in store.</li>
-            <li>Managed inventory, stock replenishment, and checkout operations.</li>
+            <li>Accueil, conseil et assistance en magasin.</li>
+            <li>Gestion de l'inventaire, des commandes et des encaissements.</li>
         </ul>
 
-        <h3><b>Trèves</b> — Procurement Intern | Reims, France</h3>
-        <p><i>July 2025 – August 2025</i></p>
+        <h3><b>Trèves</b> — Stagiaire département des achats | Reims, France</h3>
+        <p><i>Juillet 2025 – Août 2025</i></p>
         <ul>
-            <li>Discovered corporate Purchasing & Logistics operations in an international group.</li>
-            <li>Collaborated with cross-functional teams and communicated with external suppliers.</li>
+            <li>Découverte des opérations d'achats et de logisitiques dans un groupe international.</li>
+            <li>Collaborations avec de multiples équipes à l'étranger et communications avec des fournisseurs.</li>
         </ul>
         </div>
 
         <div>
-        <h2>Skills</h2>
-        <h3>Technical Skills</h3>
+        <h2>Compétences</h2>
+        <h3>Comptéences techniques</h3>
         <div class="skills-container">
             <span class="skill-tag">Python</span>
             <span class="skill-tag">C</span>
@@ -108,18 +108,18 @@
             <span class="skill-tag">Linux</span>
     </div>
 
-    <h3 style="margin-top: 15px;">Languages</h3>
+    <h3 style="margin-top: 15px;">Langues</h3>
     <div class="skills-container">
-        <span class="skill-tag highlight">English (C1)</span>
-        <span class="skill-tag highlight">French (Native)</span>
-        <span class="skill-tag highlight">Arabic MSA (B1)</span>
+        <span class="skill-tag highlight">Anglais (C1)</span>
+        <span class="skill-tag highlight">Français (langue maternelle)</span>
+        <span class="skill-tag highlight">Arabe MSA (B1)</span>
     </div>
     </div>
     </div>
 
 
         <div class="Right-arrow">
-        <p onclick="goTo('home')">Home</p>
+        <p onclick="goTo('home')">Accueil</p>
         <img src="images/chevrons/icons8-chevron-E.png" onclick="goTo('home')">
         </div>
     </section>
@@ -127,81 +127,81 @@
 
     <section id="Projects">
     <div class="center-content">
-        <h2>Featured Projects</h2>
+        <h2>Projets à la une</h2>
 
         <div class="project-card">
-            <h3>Oase WaterFinder (still in progress)</h3>
-            <p>A web application designed to locate nearby public toilets and water points, featuring real-time community contributions. Built with React and MySQL.</p>
+            <h3>Oase WaterFinder (en cours de développement)</h3>
+            <p>Une application web conçue pour localiser les toilettes publiques et points d'eau à proximité, avec des contributions communautaires en temps réel. Développée avec React et MySQL.</p>
             <ul>
-                <li>Integrated geolocation and tag-based search filtering</li>
-                <li>Implemented a user contribution system with a dynamic leaderboard</li>
+                <li>Intégration de la géolocalisation et du filtrage de recherche par tags</li>
+                <li>Mise en place d'un système de contribution utilisateur avec un classement dynamique</li>
             </ul>
-            <img src="images/projects/oase.png" alt="a picture of the project">
-            <p><a href="https://github.com/Datruc21/OaseWaterFinderWebApp.git" target="_blank">View on GitHub →</a></p>
+            <img src="images/projects/oase.png" alt="Capture d'écran du projet">
+            <p><a href="https://github.com/Datruc21/OaseWaterFinderWebApp.git" target="_blank">Voir sur GitHub →</a></p>
         </div>
 
         <div class="project-card">
-            <h3>Statistical Data Analysis — Student Performance</h3>
-            <p>End-to-end statistical study investigating the correlation between student lifestyle habits and academic results.</p>
+            <h3>Analyse statistique de données — Performance étudiante</h3>
+            <p>Étude statistique complète examinant la corrélation entre le mode de vie des étudiants et leurs résultats académiques.</p>
             <ul>
-                <li>Data collection, survey designing & preprocessing (handling missing values, cleaning)</li>
-                <li>Hypothesis formulation and statistical testing</li>
-                <li>Data visualization and insights generation using Pandas & Seaborn</li>
+                <li>Collecte de données, conception de sondages et prétraitement (gestion des valeurs manquantes, nettoyage)</li>
+                <li>Formulation d'hypothèses et tests statistiques</li>
+                <li>Visualisation des données et génération d'enseignements avec Pandas & Seaborn</li>
             </ul>
-            <p><a href="Data_analysis_study.pdf" target="_blank">Read Full Study (PDF) →</a></p>
+            <p><a href="Data_analysis_study.pdf" target="_blank">Lire l'étude complète (PDF) →</a></p>
         </div>
 
         <div class="project-card">
-            <h3>C Image Processing Software</h3>
-            <p>A desktop application developed in pure C capable of reading, processing, and exporting BMP8 and BMP24 images.</p>
+            <h3>Logiciel de traitement d'images en C</h3>
+            <p>Une application de bureau développée en C pur, capable de lire, traiter et exporter des images BMP8 et BMP24.</p>
             <ul>
-                <li>Implemented custom image algorithms (Gaussian blur, negative filter, color adjustments)</li>
-                <li>Optimized memory management and dynamic file parsing</li>
+                <li>Mise en œuvre d'algorithmes d'image personnalisés (flou gaussien, filtre négatif, ajustements de couleurs)</li>
+                <li>Optimisation de la gestion mémoire et analyse dynamique de fichiers</li>
             </ul>
-            <p><a href="https://github.com/Datruc21/Image_processing_Jalil_Bellahcen_Mael_Prouteau.git" target="_blank">View on GitHub →</a></p>
+            <p><a href="https://github.com/Datruc21/Image_processing_Jalil_Bellahcen_Mael_Prouteau.git" target="_blank">Voir sur GitHub →</a></p>
         </div>
 
         <div class="project-card">
-            <h3>2D Physics Golf Game</h3>
-            <p>A side-scrolling golf game built in Python using Pygame, incorporating power-ups and customized physics.</p>
+            <h3>Jeu de golf 2D avec moteur physique</h3>
+            <p>Un jeu de golf à défilement horizontal développé en Python avec Pygame, intégrant des bonus et une physique personnalisée.</p>
             <ul>
-                <li>Designed custom tilemap terrain rendering</li>
-                <li>Implemented collision detection algorithms using the SAT (Separating Axis Theorem) circle-polygon variant</li>
+                <li>Conception du rendu de terrain par tilemap sur-mesure</li>
+                <li>Mise en œuvre d'algorithmes de détection de collision via la variante cercle-polygone du théorème des axes séparateurs (SAT)</li>
             </ul>
-            <img src="images/projects/ball-game.png" alt="Screenshot of Ball Game gameplay">
-            <p><a href="https://github.com/Olivi3rCar/BallGameMaster.git" target="_blank">View on GitHub →</a></p>
+            <img src="images/projects/ball-game.png" alt="Capture d'écran du jeu de golf">
+            <p><a href="https://github.com/Olivi3rCar/BallGameMaster.git" target="_blank">Voir sur GitHub →</a></p>
         </div>
 
-        <h2>Competitions & Challenges</h2>
+        <h2>Compétitions & Défis</h2>
         <div class="project-card">
-            <h3>Prologin — National Programming Contest</h3>
-            <p>Participated in the qualification phase of the French National Student Programming Contest.</p>
+            <h3>Prologin — Concours National de Programmation</h3>
+            <p>Participation à la phase de qualification du Concours National de Programmation pour étudiants.</p>
             <ul>
-                <li>Solved complex algorithmic and logic challenges under strict time constraints</li>
-                <li>Implemented clean and optimized algorithms in Python and C</li>
+                <li>Résolution de défis algorithmiques et logiques complexes sous contraintes de temps strictes</li>
+                <li>Implémentation d'algorithmes propres et optimisés en Python et C</li>
             </ul>
         </div>
     </div>
         <div class="Up-arrow">
     <img src="images/chevrons/icons8-chevron-N.png" onclick="goTo('home')">
-    <p onclick="goTo('home')">Home</p>
+    <p onclick="goTo('home')">Accueil</p>
     </div>
     </section>
 
     <section id="About">
     <div class="center-content">
-    <h2>A bit about me</h2>
-    <p>I am a Computer Science & Engineering student at Efrei Paris, where I strive to always learn different things, or just get better at what I do.Currently seeking a 5 months internship in Data Science & Machine Learning starting November 2027</p>
+    <h2>Un peu plus sur moi</h2>
+    <p>Je suis étudiant en ingénierie informatique à l'Efrei Paris, où je cherche constamment à apprendre de nouvelles choses et à me perfectionner. Actuellement à la recherche d'un stage de 5 mois en Data Science & Machine Learning à partir de novembre 2027.</p>
 
-    <h2>My interests</h2>
+    <h2>Mes centres d'intérêt</h2>
     <ul>
-        <li>Tech in general, but mostly Linux and Machine Learning</li>
-        <li>Applied mathematics in Computer Science and recreational math</li>
-        <li>Reading</li>
+        <li>La tech en général, avec une passion particulière pour Linux et le Machine Learning</li>
+        <li>Les mathématiques appliquées à l'informatique et les mathématiques récréatives</li>
+        <li>La lecture</li>
     </ul>
 
-    <h2>Contact me</h2>
-    <p>My email : <a href="mailto:jalil.bellahcen@gmail.com">jalil.bellahcen@gmail.com</a></p>
+    <h2>Me contacter</h2>
+    <p>Mon e-mail : <a href="mailto:jalil.bellahcen@gmail.com">jalil.bellahcen@gmail.com</a></p>
     <div id="contact-me-icons">
     <p>
   <a href="https://www.linkedin.com/in/jalil-bellahcen-281889329/" target="_blank" aria-label="LinkedIn">
@@ -231,7 +231,7 @@
 </div>
     <div class="Left-arrow">
     <img src="images/chevrons/icons8-chevron-W.png" onclick="goTo('home')">
-    <p onclick="goTo('home')">Home</p>
+    <p onclick="goTo('home')">Accueil</p>
     </div>
     </section>
     </main>
@@ -242,6 +242,7 @@
     <div class="map-cell empty"></div>                     
     <div class="map-cell" id="map-projects"></div>          
     <div class="map-cell empty"></div>                     
-</div></body>
+</div>
+</body>
 
 </html>
