@@ -4,13 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site portfolio</title>
+    <title>موقعي الشخصي</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-phone.css">
 </head>
 
 <body>
-    <h1>En cours de traduction</h1>
-</body>
+    <header>
+        <h3>اكتمل التمهيد...</h3>
+        <p><a href="mailto:jalil.bellahcen@gmail.com">jalil.bellahcen@gmail.com</a></p>
+    
+        <p>
+            <a href="https://www.linkedin.com/in/jalil-bellahcen-281889329/" target="_blank" aria-label="LinkedIn">
+                <svg width="50px" height="50px" viewBox="0 0 24 24" id="linkedin" xmlns="http://www.w3.org/2000/svg" class="theme-icon">
+                    <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="#00FFF0" stroke-width="2"></rect>
+                    <path d="M16,17V14a2,2,0,0,0-2-2h0a2,2,0,0,0-2,2v3" fill="none" stroke="#00FFF0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    <circle cx="8" cy="8" r="1" fill="#00FFF0"></circle>
+                    <path d="M8,12v5" fill="none" stroke="#00FFF0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                </svg>
+            </a>
+        </p>
 
+        <p>
+            <a href="https://github.com/Datruc21" target="_blank" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#00FFF0" class="theme-icon">
+                    <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.809 1.304 3.495.996.108-.776.417-1.305.759-1.605-2.665-.303-5.467-1.332-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.304-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.018.005 2.044.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.649.243 2.872.12 3.176.77.84 1.234 1.91 1.234 3.221 0 4.61-2.807 5.625-5.48 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.216.694.825.576C20.565 22.092 24 17.596 24 12.297 24 5.67 18.627.297 12 .297z"/>
+                </svg>
+            </a>
+        </p>
+        <select onchange="location = this.value;">
+            <option value="index.html">EN</option>
+            <option value="index_fr.html">FR</option>
+            <option value="index_ar.html" selected>AR</option>
+        </select>
+    </header>
+
+    <main>
+    <section id="Home">
+        <div class="Left-arrow">
+        <img src="images/chevrons/icons8-chevron-W.png" onclick="goTo('resume')">
+        <p onclick="goTo('resume')">سيرتي الذاتية</p>
+        </div>
+        <div class="center-content home-hero">
+        <h1 class="hero-name">جليل بن الحسن</h1>
+        <p id="Greeting">مرحباً بك، أنت الآن في الصفحة الرئيسية. استمتع بالتصفح!</p>
+        </div>        
+        <div class="Right-arrow">
+        <p onclick="goTo('about')">نبذة عني</p>
+        <img src="images/chevrons/icons8-chevron-E.png" onclick="goTo('about')">
+        </div>        
+        <div class="Down-arrow">
+            <p onclick="goTo('projects')">مشاريعي</p>
+            <img src="images/chevrons/icons8-chevron-S.png" onclick="goTo('projects')">
+        </div>
+    </section>
+
+    <section id="Resume">
+        <div id="Full-Resume" class="center-content">
+        <div>
+        <h2>التعليم</h2>
+        <h3><b>إيفريه (Efrei)</b> - فيلجويف، فرنسا</h3>
+        <p><i>2024 – 2029</i></p>
+        <p>ماجستير العلوم في علوم الحاسوب والهندسة</p>
+        <h3><b>ثانوية بيزو (Bezout)</b> - نيمور، فرنسا</h3>
+        <p><i>2021 – 2024</i></p>
+        <p>شهادة البكالوريا العامة — تخصص الرياضيات والفيزياء</p>
+        <p>تخرج بتقدير ممتاز جداً (Mention Très Bien)</p>
+        </div>
+
+        <div>
+        <h2>الخبرة العملية</h2>
+        <h3><b>بونوبو (Bonobo)</b> — مساعد مبيعات | نيمور، فرنسا</h3>
+        <p><i>يناير 2026 – فبراير 2026</i></p>
+        <ul>
+            <li>استقبال، تقديم النصائح، ومساعدة العملاء داخل المتجر.</li>
+            <li>إدارة المخزون، إعادة ملء الرفوف، وعمليات الصندوق.</li>
+        </ul>
+
+        <h3><b>تريف (Trèves)</b> — متدرب في قسم المشتريات | ريمس، فرنسا</h3>
+        <p><i>يوليو 2025 – أغسطس 2025</i></p>
+        <ul>
+            <li>التعرف على عمليات المشتريات واللوجستيات في مجموعة دولية.</li>
+            <li>التعاون مع فرق متعددة التخصصات والتواصل مع الموردين الخارجيين.</li>
+        </ul>
+        </div>
+
+        <div>
+        <h2>المهارات</h2>
+        <h3>المهارات التقنية</h3>
+        <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Linux</span>
+        </div>
+
+    <h3 style="margin-top: 15px;">اللغات</h3>
+    <div class="skills-container">
+        <span class="skill-tag highlight">الإنكليزية (C1)</span>
+        <span class="skill-tag highlight">الفرنسية (اللغة الأم)</span>
+        <span class="skill-tag highlight">العربية الفصحى (B1)</span>
+    </div>
+    </div>
+    </div>
+
+        <div class="Right-arrow">
+        <p onclick="goTo('home')">الرئيسية</p>
+        <img src="images/chevrons/icons8-chevron-E.png" onclick="goTo('home')">
+        </div>
+    </section>
+
+    <section id="Projects">
+    <div class="center-content">
+        <h2>أبرز المشاريع</h2>
+
+        <div class="project-card">
+            <h3>مكتشف المياه Oase (قيد التطوير)</h3>
+            <p>تطبيق ويب مخصص لتحديد مواقع المراحيض العامة ونقاط المياه القريبة، مع ميزة مساهمات المجتمع الفورية. تم بناؤه باستخدام React و MySQL.</p>
+            <ul>
+                <li>دمج تحديد الموقع الجغرافي وتصفية البحث حسب الوسوم</li>
+                <li>تطبيق نظام مساهمة المستخدمين مع لوحة متصدرين تفاعلية</li>
+            </ul>
+            <img src="images/projects/oase.png" alt="صورة للمشروع">
+            <p><a href="https://github.com/Datruc21/OaseWaterFinderWebApp.git" target="_blank">عرض على GitHub →</a></p>
+        </div>
+
+        <div class="project-card">
+            <h3>تحليل البيانات الإحصائية — أداء الطلاب</h3>
+            <p>دراسة إحصائية شاملة تبحث في العلاقة بين النمط المعيشي للطلاب ونتائجهم الأكاديمية.</p>
+            <ul>
+                <li>جمع البيانات، تصميم الاستبيانات ومعالجتها الأولية (التعامل مع القيم المفقودة والتنظيف)</li>
+                <li>صياغة الفرضيات والاختبارات الإحصائية</li>
+                <li>تصور البيانات واستخلاص النتائج باستخدام Pandas و Seaborn</li>
+            </ul>
+            <p><a href="Data_analysis_study.pdf" target="_blank">قراءة الدراسة الكاملة (PDF) →</a></p>
+        </div>
+
+        <div class="project-card">
+            <h3>برنامج معالجة الصور بلغة C</h3>
+            <p>تطبيق مكتبي مبرمج بلغة C الخالصة، قادر على قراءة ومعالجة وتصدير صور صيغ BMP8 و BMP24.</p>
+            <ul>
+                <li>تطبيق خوارزميات صور مخصصة (الضبابية الدائرية، الفلتر السلبي، وتعديل الألوان)</li>
+                <li>تحسين إدارة الذاكرة وتحليل الملفات الديناميكي</li>
+            </ul>
+            <p><a href="https://github.com/Datruc21/Image_processing_Jalil_Bellahcen_Mael_Prouteau.git" target="_blank">عرض على GitHub →</a></p>
+        </div>
+
+        <div class="project-card">
+            <h3>لعبة غولف ثنائية الأبعاد بالفيزياء</h3>
+            <p>لعبة غولف جانبية التمرير تم إنشاؤها بلغة Python باستخدام Pygame، تتضمن تعزيزات طاقة وفيزياء مخصصة.</p>
+            <ul>
+                <li>تصميم عرض التضاريس باستخدام الخرائط المربعة (Tilemap)</li>
+                <li>تطبيق خوارزميات كشف التصادم باستخدام نظرية المحور الفاصل (SAT) بين الدائرة والمضلع</li>
+            </ul>
+            <img src="images/projects/ball-game.png" alt="لقطة شاشة من لعبة الغولف">
+            <p><a href="https://github.com/Olivi3rCar/BallGameMaster.git" target="_blank">عرض على GitHub →</a></p>
+        </div>
+
+        <h2>المسابقات والتحديات</h2>
+        <div class="project-card">
+            <h3>برولوجين (Prologin) — المسابقة الوطنية للبرمجة</h3>
+            <p>المشاركة في المرحلة التأهيلية للمسابقة الوطنية الفرنسية للبرمجة الموجهة للطلاب.</p>
+            <ul>
+                <li>حل تحديات برمجية ومنطقية معقدة تحت قيود زمنية صارمة</li>
+                <li>تطبيق خوارزميات نظيفة ومحسّنة بلغة Python و C</li>
+            </ul>
+        </div>
+    </div>
+        <div class="Up-arrow">
+    <img src="images/chevrons/icons8-chevron-N.png" onclick="goTo('home')">
+    <p onclick="goTo('home')">الرئيسية</p>
+    </div>
+    </section>
+
+    <section id="About">
+    <div class="center-content">
+    <h2>نبذة عني</h2>
+    <p>أنا طالب في علوم الحاسوب والهندسة في إيفريه باريس (Efrei Paris)، حيث أسعى دائماً لتعلم أشياء جديدة وتطوير مهاراتي.</p>
+    <p>أبحث حالياً عن تدريب لمدة 5 أشهر في علم البيانات وتعلم الآلة ابتداءً من نوفمبر 2027.</p>
+
+    <h2>اهتماماتي</h2>
+    <ul>
+        <li>التكنولوجيا بشكل عام، وبشكل خاص لنكس (Linux) وتعلم الآلة</li>
+        <li>الرياضيات التطبيقية في علوم الحاسوب والرياضيات الترفيهية</li>
+        <li>القراءة</li>
+    </ul>
+
+    <h2>تواصل معي</h2>
+    <p>بريدي الإلكتروني: <a href="mailto:jalil.bellahcen@gmail.com">jalil.bellahcen@gmail.com</a></p>
+    <div id="contact-me-icons">
+    <p>
+  <a href="https://www.linkedin.com/in/jalil-bellahcen-281889329/" target="_blank" aria-label="LinkedIn">
+    <svg width="50px" height="50px" viewBox="0 0 24 24" id="linkedin" xmlns="http://www.w3.org/2000/svg" class="theme-icon">
+      <rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="#00FFF0" stroke-width="2"></rect>
+      <path d="M16,17V14a2,2,0,0,0-2-2h0a2,2,0,0,0-2,2v3" fill="none" stroke="#00FFF0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+      <circle cx="8" cy="8" r="1" fill="#00FFF0"></circle>
+      <path d="M8,12v5" fill="none" stroke="#00FFF0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+    </svg>
+  </a>
+</p>
+
+<p>
+   <a href="https://github.com/Datruc21" target="_blank" aria-label="GitHub">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="#00FFF0" class="theme-icon">
+    <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.303 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.084-.729.084-.729 1.205.084 1.839 1.236 1.839 1.236 1.07 1.834 2.809 1.304 3.495.996.108-.776.417-1.305.759-1.605-2.665-.303-5.467-1.332-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.304-.535-1.527.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.018.005 2.044.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.649.243 2.872.12 3.176.77.84 1.234 1.91 1.234 3.221 0 4.61-2.807 5.625-5.48 5.921.43.372.814 1.102.814 2.222v3.293c0 .319.216.694.825.576C20.565 22.092 24 17.596 24 12.297 24 5.67 18.627.297 12 .297z"></path>
+</svg>
+  </a>
+</p>
+    </div>
+</div>
+    <div class="Left-arrow">
+    <img src="images/chevrons/icons8-chevron-W.png" onclick="goTo('home')">
+    <p onclick="goTo('home')">الرئيسية</p>
+    </div>
+    </section>
+    </main>
+
+<div id="minimap">
+    <div class="map-cell" id="map-resume"></div>   
+    <div class="map-cell active" id="map-home"></div>             
+    <div class="map-cell" id="map-about"></div>            
+    <div class="map-cell empty"></div>                     
+    <div class="map-cell" id="map-projects"></div>          
+    <div class="map-cell empty"></div>                     
+</div>
+
+</body>
 </html>

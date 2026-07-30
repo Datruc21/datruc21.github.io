@@ -1,0 +1,151 @@
+    @media (max-width: 768px) {
+        
+        header {
+            height: auto;
+            padding: 8px 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        header h3 {
+            font-size: 0.7rem;
+            margin: 0;
+            text-align: center;
+            width: 100%;    
+        }
+        
+        header svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        #Home, #Resume, #About, #Projects {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 65px 15px 85px 15px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .center-content {
+            max-height: 52vh; 
+            padding: 15px;
+            width: 90vw;      
+            margin: auto 0;
+            grid-row: auto;
+            grid-column: auto;
+        }
+
+        .home-hero {
+            margin-top: 25px;
+        }
+
+        .hero-name {
+            font-size: 2rem;
+        }
+        
+        #Greeting {
+            font-size: 0.95rem;
+        }
+
+        #Full-Resume {
+            flex-direction: column;
+            gap: 20px;
+            max-width: 90vw;
+            max-height: 52vh;
+            padding: 15px;
+            margin: auto 0;
+            grid-row: auto;
+            grid-column: auto;
+        }
+
+        .Left-arrow img, 
+        .Right-arrow img, 
+        .Up-arrow img, 
+        .Down-arrow img {
+            width: 38px;
+            height: 38px;
+        }
+        
+        .Left-arrow p, 
+        .Right-arrow p, 
+        .Up-arrow p, 
+        .Down-arrow p {
+            font-size: 0.8rem; 
+        }
+
+      
+        #Home {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-content: space-between;
+        }
+
+        #Home .center-content {
+            width: 100%;
+            order: 1;
+            margin-top: 20%;
+        }
+
+        #Home .Left-arrow {
+            order: 2;
+            width: 48%;
+            justify-content: center;
+            margin: 10px 0 0 0;
+        }
+
+        #Home .Right-arrow {
+            order: 3;
+            width: 48%;
+            justify-content: center;
+            margin: 10px 0 0 0;
+        }
+
+        #Home .Down-arrow {
+            order: 4;
+            width: 100%;
+            justify-content: center;
+            margin-top: 10%;
+        }
+
+        
+        #Projects .center-content {
+            order: 2; 
+        }
+
+        #Projects .Up-arrow {
+            order: 1; 
+            margin-top: 10%;
+            margin-bottom: 0;
+            flex-shrink: 0;
+        }
+
+       #Resume .Right-arrow, 
+       #About .Left-arrow {
+        grid-row: auto;
+        grid-column: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        margin-top: 2%;
+        padding-top: 0;
+        flex-shrink: 0;
+    }
+
+        /* Minimap */
+        #minimap {
+            bottom: 12px;
+            right: 12px;
+            padding: 5px;
+            gap: 4px;
+            grid-template-columns: repeat(3, 22px);
+            grid-template-rows: repeat(2, 22px);
+        }
+    }
