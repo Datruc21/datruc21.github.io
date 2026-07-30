@@ -55,3 +55,45 @@ if (languageSelect) {
         }
     });
 }
+
+let touchStartX = 0;
+let touchStartY = 0;
+let touchEndX = 0;
+let touchEndY = 0;
+
+window.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+}, false);
+
+window.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    touchEndY = e.changedTouches[0].screenY;
+    handleSwipe();
+}, false);
+
+
+function handleSwipe() {
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+    const swipeThreshold = 50;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX < -swipeThreshold) {
+            if (current_location === 'home') goTo('about');
+            else if (current_location === 'resume') goTo('home');
+        }
+        else if (deltaX > swipeThreshold) {
+            if (current_location === 'home') goTo('resume');
+            else if (current_location === 'about') goTo('home');
+        }
+    }
+    else {
+        if (deltaY < -swipeThreshold) {
+            if (current_location === 'home') goTo('projects');
+        }
+        else if (deltaY > swipeThreshold) {
+            if (current_location === 'projects') goTo('home');
+        }
+    }
+}

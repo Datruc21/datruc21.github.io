@@ -309,18 +309,16 @@ header h3 {
     text-align: center;
 }
 
-/* Ton nom en grand avec effet néon */
 .hero-name {
-    font-size: 3.5rem;             /* Grande taille d'écriture */
+    font-size: 3.5rem;             
     font-weight: 800;
     letter-spacing: 2px;
     color: #00FFF0;
     text-shadow: 0 0 15px rgba(0, 255, 240, 0.7), 0 0 30px rgba(0, 255, 240, 0.3);
     margin-bottom: 15px;
-    text-transform: uppercase;      /* Met en majuscules (facultatif) */
+    text-transform: uppercase;      
 }
 
-/* Réduction légère de la taille du texte d'accueil en dessous */
 #Greeting {
     font-size: 1.2rem;
     color: #e0e0e0;
@@ -338,8 +336,8 @@ header h3 {
     z-index: 1000;
     
     display: grid;
-    grid-template-columns: repeat(3, 48px); /* 3 colonnes */
-    grid-template-rows: repeat(2, 48px);    /* 2 lignes */
+    grid-template-columns: repeat(3, 48px); 
+    grid-template-rows: repeat(2, 48px);    
     gap: 6px;
     
     background: rgba(10, 15, 25, 0.6);
@@ -368,4 +366,73 @@ header h3 {
     background-color: #FF2A2A;           /* Rouge vif */
     border-color: #FF2A2A;               /* Bordure rouge */
     box-shadow: 0 0 10px rgba(255, 42, 42, 0.8); /* Effet néon rouge */
+}
+
+
+
+@media (max-width: 768px) {
+    
+    header {
+        padding: 8px 12px;
+    }
+    header h3 {
+        font-size: 0.75rem; 
+    }
+    header svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .center-content {
+        -webkit-overflow-scrolling: touch;
+        max-height: 70vh; 
+        padding: 15px;
+        width: 88vw;      
+    }
+
+    .hero-name {
+        font-size: 2.2rem;
+    }
+    #Greeting {
+        font-size: 1rem;
+    }
+
+    #Full-Resume {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 88vw;
+    }
+
+    .Left-arrow img, 
+    .Right-arrow img, 
+    .Up-arrow img, 
+    .Down-arrow img {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .Left-arrow p, 
+    .Right-arrow p, 
+    .Up-arrow p, 
+    .Down-arrow p {
+        font-size: 0.8rem; 
+    }
+
+    
+    .Up-arrow {
+        margin-top: 50px;
+    }
+
+    #minimap {
+        bottom: 12px;
+        right: 12px;
+        padding: 5px;
+        gap: 4px;
+        grid-template-columns: repeat(3, 20px);
+        grid-template-rows: repeat(2, 20px);
+    }
+    .map-cell.active::after {
+        width: 8px;
+        height: 8px;
+    }
 }
